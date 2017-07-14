@@ -1,0 +1,37 @@
+package com.goutham.lowerorhigher;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import java.util.Random;
+
+public class MainActivity extends AppCompatActivity {
+    int a;
+    Random random = new Random();
+    public void clickFunc(View v)
+    {
+        EditText myText = (EditText) findViewById(R.id.editText);
+
+        if(a>Integer.parseInt(myText.getText().toString()))
+            Toast.makeText(MainActivity.this,"Lower!!",Toast.LENGTH_SHORT).show();
+        else if(a<Integer.parseInt(myText.getText().toString()))
+            Toast.makeText(MainActivity.this,"Higher!!",Toast.LENGTH_SHORT).show();
+        else
+        { Toast.makeText(MainActivity.this,"You guessed the correct number!!,Try Guessing again!!",Toast.LENGTH_SHORT).show();
+            a = random.nextInt(1000)+1;}
+    }
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+
+        a =random.nextInt(1000)+1;
+    }
+}
