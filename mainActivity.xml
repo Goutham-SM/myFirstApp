@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:hint="I am thinking a number from 1 to 1000..."
         android:inputType="text"
-        android:textSize="20sp"
+        android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
