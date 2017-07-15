@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="I am thinking a number from 1 to 1000..."
         android:inputType="text"
@@ -36,7 +36,7 @@
         android:layout_height="48dp"
         android:layout_marginBottom="258dp"
         android:onClick="clickFunc"
-        android:text="Button"
+        android:text="GUESS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
